@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>204</width>
-    <height>256</height>
+    <height>257</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,9 +21,15 @@ background-color: rgb(22, 22, 22);</string>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
      <widget class="QLabel" name="label_3">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
       <property name="styleSheet">
        <string notr="true">
-font: 11pt &quot;MS Shell Dlg 2&quot;;
+font: 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(22, 22, 22);
 color: rgb(255, 255, 255)</string>
       </property>
@@ -43,6 +49,12 @@ color: rgb(255, 255, 255)</string>
       <property name="minimumSize">
        <size>
         <width>0</width>
+        <height>10</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
         <height>10</height>
        </size>
       </property>
