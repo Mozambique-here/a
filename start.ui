@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>204</width>
-    <height>250</height>
+    <height>256</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,36 +20,15 @@ background-color: rgb(22, 22, 22);</string>
   <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QLineEdit" name="label">
-      <property name="layoutDirection">
-       <enum>Qt::LeftToRight</enum>
-      </property>
-      <property name="autoFillBackground">
-       <bool>false</bool>
-      </property>
+     <widget class="QLabel" name="label_3">
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(22, 22, 22);
-border-color: rgb(22, 22, 22);
-color: rgb(255, 255, 255)
-</string>
+       <string notr="true">
+font: 11pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(22, 22, 22);
+color: rgb(255, 255, 255)</string>
       </property>
-      <property name="frame">
-       <bool>false</bool>
-      </property>
-      <property name="echoMode">
-       <enum>QLineEdit::Normal</enum>
-      </property>
-      <property name="dragEnabled">
-       <bool>false</bool>
-      </property>
-      <property name="readOnly">
-       <bool>false</bool>
-      </property>
-      <property name="placeholderText">
+      <property name="text">
        <string/>
-      </property>
-      <property name="cursorMoveStyle">
-       <enum>Qt::LogicalMoveStyle</enum>
       </property>
      </widget>
     </item>
@@ -522,6 +501,46 @@ color: rgb(255, 255, 255)</string>
        </widget>
       </item>
      </layout>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="label">
+      <property name="maximumSize">
+       <size>
+        <width>1</width>
+        <height>1</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(22, 22, 22);
+border-color: rgb(22, 22, 22);
+color: rgb(255, 255, 255)
+</string>
+      </property>
+      <property name="frame">
+       <bool>false</bool>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Normal</enum>
+      </property>
+      <property name="dragEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+      <property name="cursorMoveStyle">
+       <enum>Qt::LogicalMoveStyle</enum>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
