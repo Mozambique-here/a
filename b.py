@@ -3,7 +3,9 @@ from PyQt5.QtWidgets import QApplication, QWidget, QMainWindow,  QMessageBox, QL
 from PyQt5 import uic
 from math import *
 from PyQt5.QtGui import QIcon
- 
+import time
+
+
 class MyWidget(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -31,12 +33,12 @@ class MyWidget(QMainWindow):
         self.pushButton10.clicked.connect(self.run)
         self.pushButtons.clicked.connect(self.run)
         
-    def run(self, n):
+    def run(self):
         n = str(self.sender().text())
 
         if n[0] == '&':
             n = n[1]
-        print(n)
+
         s = self.label.text()
    
         self.label.setText(s + n)
@@ -46,9 +48,6 @@ class MyWidget(QMainWindow):
             self.label_2.setText(str(round(eval(s+n), 10)))
         except:
             self.label_2.setText('')
-        
-
-                
         
     def dell(self):
         self.label.setText('')
@@ -63,9 +62,8 @@ class MyWidget(QMainWindow):
             self.label_3.setText(str(round(eval(s), 10)))
         except:
             self.label_3.setText('ERROR')
-    
+            
     def keyPressEvent(self, event):
-
         if event.text() == '\r':
             s = str(self.label.text())
             try:
@@ -75,7 +73,6 @@ class MyWidget(QMainWindow):
             except:
                 self.label_3.setText('ERROR')
                 
-            
         if event.text() == '':
             s = str(self.label.text())
             try:
@@ -85,23 +82,19 @@ class MyWidget(QMainWindow):
                     self.label_3.setText('')                    
                     
                 if s[-2] in 'snng':
-                    print(s)
                     if len(s) > 4 and s[-5] in 'a' :
                         s = s[:-5]
-                        print(1)
                     else:
                         s = s[:-4]
-                        print(2)
                 else:
                     s = s[:-1]
-                    print(3)
                 self.label.setText(s)
-                self.label_2.setText(s)
+                try:
+                    self.label_2.setText(str(round(eval(s), 10)))
+                except:
+                    self.label_2.setText('')
                 self.label_3.setText(s)
-                
-
             except:
-                #self.label_3.setText('ERROR')
                 pass
                 
         if event.text() in '1234567890)(*/+-//%**.':
@@ -114,9 +107,7 @@ class MyWidget(QMainWindow):
                 self.label_2.setText(str(round(eval(s+n), 10)))
             except:
                 self.label_2.setText('')
-                print(2)
-            
-            
+
         if event.text() == 's' or event.text() == 'S':
             if event.text() == 's':
                 n = 'sin('
@@ -130,7 +121,6 @@ class MyWidget(QMainWindow):
                 self.label_2.setText(str(round(eval(s+n), 10)))
             except:
                 self.label_2.setText('')
-        
         
         if event.text() == 'c' or event.text() == 'C':
             if event.text() == 'c':
@@ -146,7 +136,6 @@ class MyWidget(QMainWindow):
             except:
                 self.label_2.setText('')
                 
-        
         if event.text() == 't' or event.text() == 'T':
             if event.text() == 't':
                 n = 'tan('
@@ -172,12 +161,7 @@ class MyWidget(QMainWindow):
             except:
                 self.label_2.setText('')
  
-                
-        
-            
-        
-            
-            
+
 app = QApplication(sys.argv)
 ex = MyWidget()
 ex.show()
