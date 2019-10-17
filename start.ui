@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>204</width>
-    <height>257</height>
+    <height>273</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -94,8 +94,18 @@ color: rgb(255, 255, 255)</string>
           <height>32</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>22</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
         <property name="styleSheet">
          <string notr="true">background-color: rgb(255, 170, 0);
+font: 22pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(255, 255, 255)
 </string>
         </property>
@@ -118,8 +128,18 @@ color: rgb(255, 255, 255)
           <height>32</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>22</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
         <property name="styleSheet">
          <string notr="true">background-color: rgb(255, 170, 0);
+font: 22pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(255, 255, 255)</string>
         </property>
         <property name="text">
@@ -141,8 +161,18 @@ color: rgb(255, 255, 255)</string>
           <height>32</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>22</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
         <property name="styleSheet">
          <string notr="true">background-color: rgb(172, 172, 172);
+font: 22pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(255, 255, 255)</string>
         </property>
         <property name="text">
@@ -164,8 +194,18 @@ color: rgb(255, 255, 255)</string>
           <height>32</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>22</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
         <property name="styleSheet">
          <string notr="true">background-color: rgb(172, 172, 172);
+font: 22pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(255, 255, 255)</string>
         </property>
         <property name="text">
@@ -187,8 +227,18 @@ color: rgb(255, 255, 255)</string>
           <height>32</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>22</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
         <property name="styleSheet">
          <string notr="true">background-color: rgb(255, 170, 0);
+font: 22pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(255, 255, 255)</string>
         </property>
         <property name="text">
@@ -210,8 +260,18 @@ color: rgb(255, 255, 255)</string>
           <height>32</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>22</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
         <property name="styleSheet">
          <string notr="true">background-color: rgb(255, 170, 0);
+font: 22pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(255, 255, 255)</string>
         </property>
         <property name="text">
@@ -233,8 +293,18 @@ color: rgb(255, 255, 255)</string>
           <height>32</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>22</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
         <property name="styleSheet">
          <string notr="true">background-color: rgb(255, 170, 0);
+font: 22pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(255, 255, 255)</string>
         </property>
         <property name="text">
@@ -256,8 +326,18 @@ color: rgb(255, 255, 255)</string>
           <height>32</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>22</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
         <property name="styleSheet">
          <string notr="true">background-color: rgb(255, 170, 0);
+font: 22pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(255, 255, 255)</string>
         </property>
         <property name="text">
@@ -279,13 +359,24 @@ color: rgb(255, 255, 255)</string>
           <height>32</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>22</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
         <property name="styleSheet">
          <string notr="true">border-color: rgb(255, 255, 255);
 background-color: rgb(255, 170, 0);
-color: rgb(255, 255, 255)</string>
+font: 22pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255)
+</string>
         </property>
         <property name="text">
-         <string>7</string>
+         <string> 7</string>
         </property>
        </widget>
       </item>
@@ -303,8 +394,18 @@ color: rgb(255, 255, 255)</string>
           <height>32</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>22</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
         <property name="styleSheet">
          <string notr="true">background-color: rgb(255, 170, 0);
+font: 22pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(255, 255, 255)</string>
         </property>
         <property name="text">
@@ -326,8 +427,18 @@ color: rgb(255, 255, 255)</string>
           <height>32</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>22</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
         <property name="styleSheet">
          <string notr="true">background-color: rgb(172, 172, 172);
+font: 22pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(255, 255, 255)</string>
         </property>
         <property name="text">
@@ -349,8 +460,18 @@ color: rgb(255, 255, 255)</string>
           <height>32</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>22</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
         <property name="styleSheet">
          <string notr="true">background-color: rgb(172, 172, 172);
+font: 22pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(255, 255, 255)</string>
         </property>
         <property name="text">
@@ -372,8 +493,18 @@ color: rgb(255, 255, 255)</string>
           <height>32</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>22</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
         <property name="styleSheet">
          <string notr="true">background-color: rgb(172, 172, 172);
+font: 22pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(255, 255, 255)</string>
         </property>
         <property name="text">
@@ -395,9 +526,19 @@ color: rgb(255, 255, 255)</string>
           <height>32</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>22</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
         <property name="styleSheet">
          <string notr="true">selection-color: rgb(255, 170, 0);
 background-color: rgb(255, 170, 0);
+font: 22pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(255, 255, 255)</string>
         </property>
         <property name="text">
@@ -419,8 +560,18 @@ color: rgb(255, 255, 255)</string>
           <height>32</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>22</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
         <property name="styleSheet">
          <string notr="true">background-color: rgb(255, 170, 0);
+font: 22pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(255, 255, 255)</string>
         </property>
         <property name="text">
@@ -442,8 +593,18 @@ color: rgb(255, 255, 255)</string>
           <height>32</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>22</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
         <property name="styleSheet">
          <string notr="true">background-color: rgb(255, 170, 0);
+font: 22pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(255, 255, 255)</string>
         </property>
         <property name="text">
@@ -465,8 +626,18 @@ color: rgb(255, 255, 255)</string>
           <height>32</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>22</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
         <property name="styleSheet">
          <string notr="true">background-color: rgb(172, 172, 172);
+font: 22pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(255, 255, 255)
 </string>
         </property>
@@ -489,8 +660,18 @@ color: rgb(255, 255, 255)
           <height>32</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>22</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
         <property name="styleSheet">
          <string notr="true">background-color: rgb(255, 170, 0);
+font: 22pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(255, 255, 255)</string>
         </property>
         <property name="text">
@@ -512,8 +693,18 @@ color: rgb(255, 255, 255)</string>
           <height>32</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>22</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
         <property name="styleSheet">
          <string notr="true">background-color: rgb(172, 172, 172);
+font: 22pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(255, 255, 255)</string>
         </property>
         <property name="text">
