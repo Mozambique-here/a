@@ -34,7 +34,8 @@ class MyWidget(QMainWindow):
         self.pushButton8.released.connect(self.run)
         self.pushButton9.released.connect(self.run)
         self.pushButton9.pressed.connect(self.push)
-        self.pushButton0.clicked.connect(self.run)
+        self.pushButton0.released.connect(self.run)
+        self.pushButton0.pressed.connect(self.push)
         self.pushButtonc.released.connect(self.dell)
         self.pushButtonc.pressed.connect(self.push)
         self.pushButtond.clicked.connect(self.run)
@@ -53,29 +54,13 @@ class MyWidget(QMainWindow):
 
         if n[0] == '&':
             n = n[1]
-        print(n)
+        n = n[0]
         s = self.label_3.text()
         global t1
-       
-        if time() - t1 > 0.3:
-        	if n == '7':
-        		n = 'sin('
-        	if n == '8':
-        		n = 'cos('
-        	if n == '9':
-        		n = 'tan('
-        	if n == '4':
-        		n = 'asin('
-        	if n == '5':
-        		n = 'acos('
-        	if n == '6':
-        		n = 'atan('
-        	if  n == '1':
-        		n = '('
-        	if n == '3':
-        		n = 'log('
-        	if n == '2':
-        		n = ')'
+        if time() - t1 > 0.3 and n in '1234567890':
+            d = {'1':'(', '2':')', '3':'log(', '4':'asin(', '5':'acos(', '6':'atan(', '7':'sin(', '8':'cos(', '9':'tan(', '0':'pi'}
+            n = d[n]
+
    
         self.label_3.setText(s + n)
         self.label.setText(s + n)
@@ -101,10 +86,12 @@ class MyWidget(QMainWindow):
     		self.label.setText('')
     	else:
             try:
-                if len(s) == 1:
+                if len(s) == 1 or (len(s) == 2 and s[1] == 'i'):
                     self.label.setText('')
                     self.label_2.setText('')
-                    self.label_3.setText('')                    
+                    self.label_3.setText('')
+                if s[-1] == 'i':
+                    s = s[:-1]
                     
                 if s[-2] in 'snng':
                     if len(s) > 4 and s[-5] in 'a' :
@@ -130,7 +117,7 @@ class MyWidget(QMainWindow):
             self.label_3.setText(str(round(eval(s), 10)))
         except:
             self.label_3.setText('ERROR')
-    
+	    
     def keyPressEvent(self, event):
 
         if event.text() == '\r':
@@ -141,17 +128,19 @@ class MyWidget(QMainWindow):
 
             except:
                 self.label_3.setText('ERROR')
+	    
                 
             
 
         if event.text() == '':
             s = str(self.label.text())
             try:
-                if len(s) == 1:
+                if len(s) == 1 or (len(s) == 2 and s[1] == 'i'):
                     self.label.setText('')
                     self.label_2.setText('')
-                    self.label_3.setText('')                    
-                    
+                    self.label_3.setText('')
+                if s[-1] == 'i':
+                    s = s[:-1]
                 if s[-2] in 'snng':
                     if len(s) > 4 and s[-5] in 'a' :
                         s = s[:-5]
@@ -177,9 +166,7 @@ class MyWidget(QMainWindow):
             try:
                 self.label_2.setText(str(round(eval(s+n), 10)))
             except:
-                self.label_2.setText('')
-                print(2)
-            
+                self.label_2.setText('')            
             
         if event.text() == 's' or event.text() == 'S':
             if event.text() == 's':
@@ -227,6 +214,26 @@ class MyWidget(QMainWindow):
                 
         if event.text() == 'l':
             n = 'log('
+            s = self.label.text()
+            self.label.setText(s + n)
+            self.label_3.setText(s + n) 
+            
+            try:
+                self.label_2.setText(str(round(eval(s+n), 10)))
+            except:
+                self.label_2.setText('') 
+        if event.text() == 'p':
+            n = 'pi'
+            s = self.label.text()
+            self.label.setText(s + n)
+            self.label_3.setText(s + n) 
+            
+            try:
+                self.label_2.setText(str(round(eval(s+n), 10)))
+            except:
+                self.label_2.setText('')
+        if event.text() == 'e':
+            n = 'e'
             s = self.label.text()
             self.label.setText(s + n)
             self.label_3.setText(s + n) 

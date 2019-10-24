@@ -100,7 +100,8 @@ color: rgb(255, 255, 255)
 </string>
         </property>
         <property name="text">
-         <string>0</string>
+         <string>0
+pi</string>
         </property>
        </widget>
       </item>
@@ -123,7 +124,8 @@ color: rgb(255, 255, 255)
 color: rgb(255, 255, 255)</string>
         </property>
         <property name="text">
-         <string>3</string>
+         <string>3
+log</string>
         </property>
        </widget>
       </item>
@@ -208,7 +210,8 @@ color: rgb(255, 255, 255)</string>
 color: rgb(255, 255, 255)</string>
         </property>
         <property name="text">
-         <string>8</string>
+         <string>8
+cos</string>
         </property>
        </widget>
       </item>
@@ -254,7 +257,8 @@ color: rgb(255, 255, 255)</string>
 color: rgb(255, 255, 255)</string>
         </property>
         <property name="text">
-         <string>2</string>
+         <string>2
+)</string>
         </property>
        </widget>
       </item>
@@ -277,7 +281,8 @@ color: rgb(255, 255, 255)</string>
 color: rgb(255, 255, 255)</string>
         </property>
         <property name="text">
-         <string>9</string>
+         <string>9
+tan</string>
         </property>
        </widget>
       </item>
@@ -301,7 +306,8 @@ background-color: rgb(255, 170, 0);
 color: rgb(255, 255, 255)</string>
         </property>
         <property name="text">
-         <string>7</string>
+         <string>7 
+sin</string>
         </property>
        </widget>
       </item>
@@ -417,7 +423,8 @@ background-color: rgb(255, 170, 0);
 color: rgb(255, 255, 255)</string>
         </property>
         <property name="text">
-         <string>6</string>
+         <string>6
+atan</string>
         </property>
        </widget>
       </item>
@@ -440,7 +447,8 @@ color: rgb(255, 255, 255)</string>
 color: rgb(255, 255, 255)</string>
         </property>
         <property name="text">
-         <string>5</string>
+         <string>5
+acos</string>
         </property>
        </widget>
       </item>
@@ -463,7 +471,8 @@ color: rgb(255, 255, 255)</string>
 color: rgb(255, 255, 255)</string>
         </property>
         <property name="text">
-         <string>1</string>
+         <string>1
+(</string>
         </property>
        </widget>
       </item>
@@ -510,7 +519,8 @@ color: rgb(255, 255, 255)
 color: rgb(255, 255, 255)</string>
         </property>
         <property name="text">
-         <string>4</string>
+         <string>4
+asin</string>
         </property>
        </widget>
       </item>
